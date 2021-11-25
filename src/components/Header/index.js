@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import {StyleSheet, SafeAreaView, View, Image, TextInput} from 'react-native';
+import {StyleSheet, View, Image, TextInput} from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 
 
@@ -11,7 +11,6 @@ export function Header(){
 
     return (
 
-    <SafeAreaView>
         <View  style={styles.container}>
             <Image 
                 source={require('../../assets/logo.png')}
@@ -30,7 +29,6 @@ export function Header(){
             <Icon name="menu" size={50} color="white"/>
             
         </View>
-    </SafeAreaView>
 
 )}
 
