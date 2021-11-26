@@ -4,12 +4,13 @@ import Icon from 'react-native-vector-icons/MaterialIcons';
 
 
 
-export function Card() {
+export function Card( props ) {
+    const { navigationToMovie } = props;    
     return (
         <View style={styles.container}>
             <Image
                 style={styles.image}
-                source={{ uri: 'https://picsum.photos/200/300' }}
+                source={require ('../../assets/bannerMovie.jpg')}
             />
             <TouchableOpacity style={styles.content}>
                 <View style={styles.vote}>
@@ -21,6 +22,7 @@ export function Card() {
                 <TouchableOpacity
                     activeOpacity={.7}
                     style={styles.button}
+                    onPress={navigationToMovie}
                 ><Text style={styles.buttonText}>+ Ver mais</Text>
                 </TouchableOpacity>
 

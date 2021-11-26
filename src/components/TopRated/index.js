@@ -4,7 +4,15 @@ import { Card } from "../Card";
 
 
 
-export function TopRated() {
+
+export function TopRated( props ) {
+
+    const { navigate } = props;
+
+    const navigationToMovie = () => {
+        navigate("Movie")
+    }   
+    
     return (
             <View>
                 <Text style={styles.title}>
@@ -18,7 +26,7 @@ export function TopRated() {
                     decelerationRate={"fast"}
                     keyExtractor={(item) => item.toString()}
                     horizontal
-                    renderItem={() => <Card style={{ marginHorizontal: 10 }}/>}
+                    renderItem={() => <Card navigationToMovie={navigationToMovie}/>}
                 >
                 </FlatList>
 

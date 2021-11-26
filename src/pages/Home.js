@@ -5,15 +5,18 @@ import { Slider } from '../components/Slider';
 import { TopRated } from '../components/TopRated';
 import { LowestRated } from '../components/LowestRated';
 
-export function Home() {
+export function Home( { navigation } ) {
+    
 
     return (
         <ScrollView >
-            <SafeAreaView style={styles.container}>
+           <SafeAreaView style={styles.container}>
                 <View>
                     <Header />
                     <Slider />
-                    <TopRated />
+                    <TopRated 
+                    navigate={navigation.navigate}
+                    />
                     <LowestRated/>
                 </View>
             </SafeAreaView>
