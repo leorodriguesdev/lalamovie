@@ -122,7 +122,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
  <sub><b>Leonardo Rodrigues</b></sub></a> <a target="_blank" href="https://bio.link/leorodriguesdev" title="link leo">⚡</a>
 
 
-Feito com ❤️ por Leonardo Rodrigues 👋🏽 Entre em contato!
+Feito com ❤️ e ☕ por Leonardo Rodrigues 👋🏽 Entre em contato!
 
 [![Twitter Badge](https://img.shields.io/badge/-@leorodriguesdev-1ca0f1?style=flat-square&labelColor=1ca0f1&logo=twitter&logoColor=white&link=https://twitter.com/leorodriguesdev)](https://twitter.com/leorodriguesdev) [![Linkedin Badge](https://img.shields.io/badge/-Linkedin-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/leorodriguesdev/)](https://www.linkedin.com/in/leorodriguesdev/) 
 [![Gmail Badge](https://img.shields.io/badge/-lerodriguesoffice@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:leorodriguesoffice@gmail.com)](mailto:leorodriguesoffice@gmail.com)
