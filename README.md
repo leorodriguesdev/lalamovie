@@ -20,7 +20,7 @@
 [![Figma](https://img.shields.io/badge/--F24E1E?logo=figma&logoColor=ffffff)](https://www.figma.com/)
 [![Open Source Love svg3](https://badges.frapsoft.com/os/v3/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
 
-<a href="https://www.reactnative.dev/"><img alt="React Native" src="https://img.shields.io/badge/Made in-React Native-blue">
+<a target="_blank" href="https://www.reactnative.dev/"><img alt="React Native" src="https://img.shields.io/badge/Made in-React Native-blue">
 </a>
 
 
@@ -49,7 +49,7 @@ Projeto de estudo, idealizado com o objetivo de aprender na prática React Nativ
 
 
 <p align="center" >
-<a href="https://www.figma.com/file/WOgzQRVuJdzEapKKlwCRrd/LalaMovie"><img alt="Protótipo" src="https://img.shields.io/badge/Clique aqui para ver - Protótipo e Designer no Figma-yellow"></a>
+<a target="_blank" href="https://www.figma.com/file/WOgzQRVuJdzEapKKlwCRrd/LalaMovie"><img alt="Protótipo" src="https://img.shields.io/badge/Clique aqui para ver - Protótipo e Designer no Figma-yellow"></a>
 </p>
 
 
@@ -116,15 +116,15 @@ As seguintes ferramentas foram usadas na construção do projeto:
 ## Autor
 
 
-<a href="https://bio.link/leorodriguesdev">
+<a target="_blank" href="https://bio.link/leorodriguesdev">
  <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/74029443?s=400&u=6805c72bfdcfef209836c10e359c1312bb1619c7&v=4" width="100px;" alt=""/>
  <br />
- <sub><b>Leonardo Rodrigues</b></sub></a> <a href="https://bio.link/leorodriguesdev" title="link leo">⚡</a>
+ <sub><b>Leonardo Rodrigues</b></sub></a> <a target="_blank" href="https://bio.link/leorodriguesdev" title="link leo">⚡</a>
 
 
 Feito com ❤️ por Leonardo Rodrigues 👋🏽 Entre em contato!
 
-[![Twitter Badge](https://img.shields.io/badge/-@leorodriguesdev-1ca0f1?style=flat-square&labelColor=1ca0f1&logo=twitter&logoColor=white&link=https://twitter.com/leorodriguesdev)](https://twitter.com/leorodriguesdev) [![Linkedin Badge](https://img.shields.io/badge/-Linkedin-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/on-leorodrigues/)](https://www.linkedin.com/in/on-leorodrigues/) 
+[![Twitter Badge](https://img.shields.io/badge/-@leorodriguesdev-1ca0f1?style=flat-square&labelColor=1ca0f1&logo=twitter&logoColor=white&link=https://twitter.com/leorodriguesdev)](https://twitter.com/leorodriguesdev) [![Linkedin Badge](https://img.shields.io/badge/-Linkedin-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/leorodriguesdev/)](https://www.linkedin.com/in/leorodriguesdev/) 
 [![Gmail Badge](https://img.shields.io/badge/-lerodriguesoffice@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:leorodriguesoffice@gmail.com)](mailto:leorodriguesoffice@gmail.com)
 
 <p align="left" >
