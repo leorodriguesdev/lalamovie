@@ -75,8 +75,6 @@ Projeto de estudo, idealizado com o objetivo de aprender na prática React Nativ
 
   <img alt="lalamoviepreview" title="#lalamoviepreview" src=".github/preview.png" />
 
-  <img alt="lalamoviepreview2" title="#lalamoviepreview2" src=".github/preview2.png" />
-
 </p>
 
 
