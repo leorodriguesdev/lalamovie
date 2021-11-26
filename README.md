@@ -1,29 +1,28 @@
-<a alt="README in english language" href="/README-en.md">Click here for README in english language <span>&nbsp;&nbsp;<img   height="20" width="20" alt="Repository List" src=".github/estados-unidos.png" /> ' <img   height="20" width="20" alt="Repository List" src=".github/reino-unido.png" /></span></a>
+
 
 <p align="center" >
-<img   alt="dtmoney banner" src=".github/dtmoneybanner.png" />
+<img   alt="dtmoney banner" src=".github/banner1.png" />
 </p>
 
 
 
 <h1 align="center">
-     dt money
+     LalaMovie
 </h1>
-<p align="center">💲 Aplicação para controle pessoal de finanças </p>
+<p align="center">🎬 Aplicação para críticas e comentários de filmes </p>
 
 
 \
 \
 [![GitHub](https://img.shields.io/badge/--181717?logo=github&logoColor=ffffff)](https://github.com/)
 [![Visual Studio Code](https://img.shields.io/badge/--007ACC?logo=visual%20studio%20code&logoColor=ffffff)](https://code.visualstudio.com/)
-[![TypeScript](https://img.shields.io/badge/--3178C6?logo=typescript&logoColor=ffffff)](https://www.typescriptlang.org/)
+[![TypeScript](https://img.shields.io/badge/--yellow?logo=javascript&logoColor=ffffff)](https://www.typescriptlang.org/)
 [![Figma](https://img.shields.io/badge/--F24E1E?logo=figma&logoColor=ffffff)](https://www.figma.com/)
 [![Open Source Love svg3](https://badges.frapsoft.com/os/v3/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
 
-<a href="https://pt-br.reactjs.org/"><img alt="React" src="https://img.shields.io/badge/Made in-React-blue"></a>
-<a href="https://github.com/onLeoRodrigues/dtmoney/issues"><img alt="GitHub issues" src="https://img.shields.io/github/issues/onLeoRodrigues/dtmoney"></a>
-<a href="https://github.com/onLeoRodrigues/dtmoney/network"><img alt="GitHub forks" src="https://img.shields.io/github/forks/onLeoRodrigues/dtmoney"></a>
-<a href="https://github.com/onLeoRodrigues/dtmoney/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/onLeoRodrigues/dtmoney"></a>
+<a href="https://www.reactnative.dev/"><img alt="React Native" src="https://img.shields.io/badge/Made in-React Native-blue">
+</a>
+
 
 Guia
 =================
@@ -39,28 +38,46 @@ Guia
 
 ## Sobre
 
-dt money é um projeto criado para controle de finanças pessoal, onde você encontra recursos como de entrada e daída de dinheiro,organizadas por nome e categoria.
-Projeto criado no chapter 1 do IGNITE da Rocketseat.
+Projeto de estudo, idealizado com o objetivo de aprender na prática React Native e preparando a aspirante e dev jr.
 
 
 ## Status do Projeto
 
 <h4 align="center"> 
-	🚧  dtmoney 🚩 Em construção...  🚧
+	🚧  LalaMovie 🚩 Em construção...  🚧
 </h4>
+
+
+<p align="center" >
+<a href="https://www.figma.com/file/WOgzQRVuJdzEapKKlwCRrd/LalaMovie"><img alt="Protótipo" src="https://img.shields.io/badge/Clique aqui para ver - Protótipo e Designer no Figma-yellow"></a>
+</p>
+
+
 
 ## Features
 
 
-- [x] Cadastro de entrada/saída
-- [x] Calculo de Entrada, Saída e Total
-- [ ] Página de login
+- [x] Designer do projeto no Figma
+- [x] Criar projeto com CLI react native em JS
+- [x] Page Home
+- [x] Header
+- [x] Slider
+- [x] Card
+- [x] Top Rated
+- [x] Lowest Rated
+- [x] Navigation
+- [ ] Page Movie
+
+    . . .
 
 ---
-<h1 align="center">
-  <img alt="dtmoneypreview" title="#dtmoneypreview" src=".github/preview.png" />
-  <img alt="dtmoneypreview" title="#dtmoneypreview" src=".github/preview2.png" />
-</h1>
+<p align="center">
+
+  <img alt="lalamoviepreview" title="#lalamoviepreview" src=".github/preview.png" />
+
+  <img alt="lalamoviepreview2" title="#lalamoviepreview2" src=".github/preview2.png" />
+
+</p>
 
 
 ## Pré-requisitos
@@ -73,30 +90,30 @@ Além disto é bom ter um editor para trabalhar com o código como [VSCode](http
 
 ```bash
 # Clone este repositório
-$ git clone https://github.com/onLeoRodrigues/dtmoney.git
+$ git clone https://github.ibm.com/leonardo-rodrigues/lalamovie.git
 
 # Acesse a pasta do projeto no terminal/cmd
-$ cd dtmoney
+$ cd lalamovie
 
 # Instale as dependências
-$ yarn build
+$ yarn install
 
-# Execute a aplicação em modo de desenvolvimento
-$ yarn start
+# Execute a aplicação em modo de desenvolvimento no emulador android ( Dica: Deixar o emulador aberto antes deste comando )
+$ yarn android
 
-# A aplicação inciará na porta:3000 - acesse http://localhost:3000/
+# Execute a aplicação em modo de desenvolvimento no emulador ios
+$ yanr ios
+
+# A aplicação inciará de form automática após o comando em qualquer uma das três opções.
 ```
 ## 🛠 Tecnologias
 
 As seguintes ferramentas foram usadas na construção do projeto:
 
 - [Node.js](https://nodejs.org/en/)
-- [React](https://pt-br.reactjs.org/)
-- [TypeScript](https://www.typescriptlang.org/)
-- [Axios](https://axios-http.com/docs/intro)
-- [MirageJs](https://miragejs.com/)                       
-- [Polished](https://polished.js.org/)
-- [Styled Components](https://styled-components.com/)  
+- [React-Native Cli](https://reactnative.dev/docs/environment-setup)
+- [Hooks como useState e useEffect](https://pt-br.reactjs.org/docs/hooks-effect.html)                       
+- [FlatList](https://reactnative.dev/docs/flatlist)
 
 ## Autor
 
