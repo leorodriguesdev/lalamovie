@@ -38,7 +38,7 @@ Guia
 
 ## Sobre
 
-Projeto de estudo, idealizado com o objetivo de aprender na prática React Native e preparando a aspirante e dev jr.
+Projeto de estudo, idealizado com o objetivo de aprender na prática React Native e preparando a aspirante a dev jr.
 
 
 ## Status do Projeto
