@@ -4,11 +4,11 @@ import { Card } from "../Card";
 
 
 
-export function TopRated() {
+export function LowestRated() {
     return (
             <View>
                 <Text style={styles.title}>
-                    <Text style={styles.bar}>|</Text>  Top Rated
+                    <Text style={styles.bar}>|</Text>  Lowest Rated
                 </Text>
 
                 <FlatList

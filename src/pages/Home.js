@@ -1,19 +1,23 @@
 import React from 'react';
-import { SafeAreaView, StyleSheet, View } from 'react-native';
+import { SafeAreaView, ScrollView, StyleSheet, View } from 'react-native';
 import { Header } from '../components/Header';
 import { Slider } from '../components/Slider';
 import { TopRated } from '../components/TopRated';
+import { LowestRated } from '../components/LowestRated';
 
 export function Home() {
 
     return (
-        <SafeAreaView style={styles.container}>
-            <View>
-                <Header />
-                <Slider />
-                <TopRated />
-            </View>
-        </SafeAreaView>
+        <ScrollView >
+            <SafeAreaView style={styles.container}>
+                <View>
+                    <Header />
+                    <Slider />
+                    <TopRated />
+                    <LowestRated/>
+                </View>
+            </SafeAreaView>
+        </ScrollView>
     );
 };
 

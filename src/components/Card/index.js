@@ -35,6 +35,7 @@ const styles = StyleSheet.create({
         height: 240,
         borderRadius: 4,
         flexDirection: 'column-reverse',
+        marginHorizontal: 10
 
     },
     image: {
