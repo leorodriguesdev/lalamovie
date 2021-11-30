@@ -9,14 +9,16 @@ const Stack = createNativeStackNavigator();
 
 
 export default function App() {
-    return (
-  <NavigationContainer>
-        <Stack.Navigator initialRouteName='Home'>
-          <Stack.Screen name="Home" component={Home} />
-          <Stack.Screen name="Movie" component={Movie} /> 
-        </Stack.Navigator>
-  </NavigationContainer>
+  return (
+    <NavigationContainer>
+      <Stack.Navigator
+        screenOptions={{headerShown: false}}
+        initialRouteName='Movie'>
+        <Stack.Screen name="Home" component={Home} />
+        <Stack.Screen name="Movie" component={Movie} />
+      </Stack.Navigator>
+    </NavigationContainer>
 
-    );
+  );
 
 }

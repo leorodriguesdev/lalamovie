@@ -17,7 +17,9 @@ export function Home( { navigation } ) {
                     <TopRated 
                     navigate={navigation.navigate}
                     />
-                    <LowestRated/>
+                    <LowestRated
+                    navigate={navigation.navigate}
+                    />
                 </View>
             </SafeAreaView>
         </ScrollView>

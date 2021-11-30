@@ -58,7 +58,6 @@ const styles = StyleSheet.create({
         padding: 0,
     },
     vote: {
-
         flexDirection: 'row',
         alignItems: 'center',
         paddingHorizontal: 3,
