@@ -66,7 +66,10 @@ Projeto de estudo, idealizado com o objetivo de aprender na prática React Nativ
 - [x] Top Rated
 - [x] Lowest Rated
 - [x] Navigation
-- [ ] Page Movie
+- [x] Page Movie
+- [x] Comment for page Movie
+- [ ] Input for comment
+- [ ] Logic for comment
 
     . . .
 
