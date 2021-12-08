@@ -6,14 +6,12 @@ import { MovieDetails } from '../components/MovieDetails';
 export function Movie() {
 
     return (
-        <ScrollView >
            <SafeAreaView style={styles.container}>
                 <View>
                     <Header />
                     <MovieDetails />
                 </View>
             </SafeAreaView>
-        </ScrollView>
     );
 };
 

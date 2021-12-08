@@ -9,7 +9,6 @@ export function Home( { navigation } ) {
     
 
     return (
-        <ScrollView >
            <SafeAreaView style={styles.container}>
                 <View>
                     <Header />
@@ -22,7 +21,6 @@ export function Home( { navigation } ) {
                     />
                 </View>
             </SafeAreaView>
-        </ScrollView>
     );
 };
 

@@ -1,5 +1,6 @@
-import React from "react";
+import React , {useEffect, useState} from "react";
 import { FlatList, ScrollView, StyleSheet, Text, View } from "react-native";
+import movieList from "../../services/movieList";
 import { Card } from "../Card";
 
 
@@ -7,26 +8,51 @@ import { Card } from "../Card";
 
 export function TopRated( props ) {
 
+    const [movies,setMovies] = useState(undefined);
+
+    const metodo = (callback)=>{
+        movies = buscarListaDeFilmes();
+        callback(movies);
+    }
+    useEffect(()=>{
+        //import o metodo que lista os top rateds
+        //chamar o método e definir um meio para que esse método atuaklize o estado
+        
+        // setMovies([]);
+        metodo((movies)=>{
+            setMovies(movies);
+        })
+    },[]);
+
+    
+
     const { navigate } = props;
 
-    const navigationToMovie = () => {
+    const meuNavigationToMovie = () => {
         navigate("Movie")
     }   
+
+    const meuRenderItem = ({item}) => (
+        <Card movie={item} navigationToMovie={meuNavigationToMovie}/>
+    )
+    
     
     return (
-            <View>
+            <View style={{flex: 1}}>
                 <Text style={styles.title}>
                     <Text style={styles.bar}>|</Text>  Top Rated
                 </Text>
 
                 <FlatList
-                    data={[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]}
+                    contentContainerStyle={{flexGrow: 1}}
+                    data={movieList}
                     showsHorizontalScrollIndicator={false}
                     snapToAlignment={"start"}
                     decelerationRate={"fast"}
-                    keyExtractor={(item) => item.toString()}
+                    keyExtractor={(item) => item.id}
                     horizontal
-                    renderItem={() => <Card navigationToMovie={navigationToMovie}/>}
+                    renderItem={meuRenderItem}
+                    
                 >
                 </FlatList>
 

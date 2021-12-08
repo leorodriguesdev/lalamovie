@@ -4,21 +4,25 @@ import Icon from 'react-native-vector-icons/MaterialIcons';
 
 
 
-export function Card( props ) {
-    const { navigationToMovie } = props;    
-    return (
+export function Card({ navigationToMovie, movie}) {
+ 
+ //   const { navigationToMovie } = props;   
+    const { title, note, image } = movie; 
+   
+ 
+ return (
         <View style={styles.container}>
             <Image
                 style={styles.image}
-                source={require ('../../assets/bannerMovie.jpg')}
+                source={image}
             />
             <TouchableOpacity style={styles.content}>
                 <View style={styles.vote}>
                     <Icon name="star" size={18} color="yellow" />
 
-                    <Text style={styles.note}>8.9</Text>
+                    <Text style={styles.note}>{note}</Text>
                 </View>
-                <Text style={styles.movieTitle}>A volta dos que não foram</Text>
+                <Text style={styles.movieTitle}>{title}</Text>
                 <TouchableOpacity
                     activeOpacity={.7}
                     style={styles.button}

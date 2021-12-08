@@ -5,22 +5,28 @@ import { Comment } from "../comment";
 
 
 
-export function MovieDetails() {
+export function MovieDetails({movie}) {
+
+    const { image, title, note, rank, synopsis, director, cast} = movie;
+
+
+
+
     return (
         <View style={styles.container}>
             <View style={styles.content}>
                 <Image
-                    source={require('../../assets/bannerMovie.jpg')}
+                    source={image}
                     style={styles.imageMovie}
                 />
                 <View style={styles.title}>
-                    <Text style={styles.nameMovie}>As tranças de um careca</Text>
+                    <Text style={styles.nameMovie}>{title}</Text>
                     <Icon name="star" size={22} color="yellow" />
-                    <Text style={styles.note}>8.9</Text>
+                    <Text style={styles.note}>{note}</Text>
 
                 </View>
-                <Text style={styles.subTitle}>Classificação 89 anos</Text>
-                <Text style={styles.titleSinopse}>Sinopse</Text>
+                <Text style={styles.subTitle}>{rank}</Text>
+                <Text style={styles.titleSinopse}>{synopsis}</Text>
                 <Text style={styles.sinopse}>
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     Exercitationem velit tempore praesentium accusantium officiis a
@@ -28,7 +34,7 @@ export function MovieDetails() {
                     repudiandae animi, quaerat voluptatibus ullam! Accusantium!
                 </Text>
 
-                    <Text style={styles.cast}>Fulano de tal</Text>
+                    <Text style={styles.cast}>{}</Text>
                     <Text style={styles.cast}>Ciclano de tal</Text>
 
             </View>

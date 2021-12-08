@@ -11,7 +11,7 @@ export function LowestRated() {
                     <Text style={styles.bar}>|</Text>  Lowest Rated
                 </Text>
 
-                <FlatList
+                {/* <FlatList
                     data={[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]}
                     showsHorizontalScrollIndicator={false}
                     snapToAlignment={"start"}
@@ -20,7 +20,7 @@ export function LowestRated() {
                     horizontal
                     renderItem={() => <Card style={{ marginHorizontal: 10 }}/>}
                 >
-                </FlatList>
+                </FlatList> */}
 
             </View>
     )
