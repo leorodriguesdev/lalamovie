@@ -5,22 +5,24 @@ import { Slider } from '../components/Slider';
 import { TopRated } from '../components/TopRated';
 import { LowestRated } from '../components/LowestRated';
 
-export function Home( { navigation } ) {
-    
+export function Home({ navigation }) {
+
 
     return (
-           <SafeAreaView style={styles.container}>
+        <ScrollView>
+            <SafeAreaView style={styles.container}>
                 <View>
                     <Header />
                     <Slider />
-                    <TopRated 
-                    navigate={navigation.navigate}
+                    <TopRated
+                        navigate={navigation.navigate}
                     />
                     <LowestRated
-                    navigate={navigation.navigate}
+                        navigate={navigation.navigate}
                     />
                 </View>
             </SafeAreaView>
+        </ScrollView>
     );
 };
 

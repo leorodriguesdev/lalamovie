@@ -8,21 +8,21 @@ import { Card } from "../Card";
 
 export function TopRated( props ) {
 
-    const [movies,setMovies] = useState(undefined);
+    // const [movies,setMovies] = useState(undefined);
 
-    const metodo = (callback)=>{
-        movies = buscarListaDeFilmes();
-        callback(movies);
-    }
-    useEffect(()=>{
-        //import o metodo que lista os top rateds
-        //chamar o método e definir um meio para que esse método atuaklize o estado
+    // const metodo = (callback)=>{
+    //     movies = buscarListaDeFilmes();
+    //     callback(movies);
+    // }
+    // // useEffect(()=>{
+    // //     //import o metodo que lista os top rateds
+    // //     //chamar o método e definir um meio para que esse método atuaklize o estado
         
-        // setMovies([]);
-        metodo((movies)=>{
-            setMovies(movies);
-        })
-    },[]);
+    // //     // setMovies([]);
+    // //     metodo((movies)=>{
+    // //         setMovies(movies);
+    // //     })
+    // // },[]);
 
     
 
@@ -38,13 +38,13 @@ export function TopRated( props ) {
     
     
     return (
-            <View style={{flex: 1}}>
+            <View >
                 <Text style={styles.title}>
                     <Text style={styles.bar}>|</Text>  Top Rated
                 </Text>
 
                 <FlatList
-                    contentContainerStyle={{flexGrow: 1}}
+                    //contentContainerStyle={{flexGrow: 1}}
                     data={movieList}
                     showsHorizontalScrollIndicator={false}
                     snapToAlignment={"start"}

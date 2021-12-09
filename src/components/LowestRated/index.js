@@ -1,26 +1,39 @@
 import React from "react";
 import { FlatList, ScrollView, StyleSheet, Text, View } from "react-native";
+import movieList from "../../services/movieList";
 import { Card } from "../Card";
 
 
 
-export function LowestRated() {
+export function LowestRated( props ) {
+
+    const { navigate } = props;
+
+    const meuNavigationToMovie = () => {
+        navigate("Movie")
+    }   
+
+    const meuRenderItem = ({item}) => (
+        <Card movie={item} navigationToMovie={meuNavigationToMovie}/>
+    )
     return (
             <View>
                 <Text style={styles.title}>
                     <Text style={styles.bar}>|</Text>  Lowest Rated
                 </Text>
 
-                {/* <FlatList
-                    data={[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]}
+                <FlatList
+                    //contentContainerStyle={{flexGrow: 1}}
+                    data={movieList}
                     showsHorizontalScrollIndicator={false}
                     snapToAlignment={"start"}
                     decelerationRate={"fast"}
-                    keyExtractor={(item) => item.toString()}
+                    keyExtractor={(item) => item.id}
                     horizontal
-                    renderItem={() => <Card style={{ marginHorizontal: 10 }}/>}
+                    renderItem={meuRenderItem}
+                    
                 >
-                </FlatList> */}
+                </FlatList>
 
             </View>
     )

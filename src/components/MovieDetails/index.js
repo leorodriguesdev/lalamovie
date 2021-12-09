@@ -7,42 +7,42 @@ import { Comment } from "../comment";
 
 export function MovieDetails({movie}) {
 
-    const { image, title, note, rank, synopsis, director, cast} = movie;
+ //   const { image, title, note, rank, synopsis, director, cast} = movie;
 
 
 
 
     return (
         <View style={styles.container}>
-            <View style={styles.content}>
-                <Image
-                    source={image}
-                    style={styles.imageMovie}
-                />
-                <View style={styles.title}>
-                    <Text style={styles.nameMovie}>{title}</Text>
-                    <Icon name="star" size={22} color="yellow" />
-                    <Text style={styles.note}>{note}</Text>
-
-                </View>
-                <Text style={styles.subTitle}>{rank}</Text>
-                <Text style={styles.titleSinopse}>{synopsis}</Text>
-                <Text style={styles.sinopse}>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Exercitationem velit tempore praesentium accusantium officiis a
-                    soluta aperiam quisquam, atque provident dolor saepe ipsa esse
-                    repudiandae animi, quaerat voluptatibus ullam! Accusantium!
-                </Text>
-
-                    <Text style={styles.cast}>{}</Text>
-                    <Text style={styles.cast}>Ciclano de tal</Text>
+        <View style={styles.content}>
+            <Image
+                source={require('../../assets/bannerMovie.jpg')}
+                style={styles.imageMovie}
+            />
+            <View style={styles.title}>
+                <Text style={styles.nameMovie}>As tranças de um careca</Text>
+                <Icon name="star" size={22} color="yellow" />
+                <Text style={styles.note}>8.9</Text>
 
             </View>
-            <Comment />
-            <Comment />
-            <Comment />
+            <Text style={styles.subTitle}>Classificação 89 anos</Text>
+            <Text style={styles.titleSinopse}>Sinopse</Text>
+            <Text style={styles.sinopse}>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Exercitationem velit tempore praesentium accusantium officiis a
+                soluta aperiam quisquam, atque provident dolor saepe ipsa esse
+                repudiandae animi, quaerat voluptatibus ullam! Accusantium!
+            </Text>
+
+                <Text style={styles.cast}>Fulano de tal</Text>
+                <Text style={styles.cast}>Ciclano de tal</Text>
 
         </View>
+        <Comment />
+        <Comment />
+        <Comment />
+
+    </View>
     );
 };
 
