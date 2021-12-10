@@ -1,6 +1,8 @@
 import React from "react";
 import { FlatList, ScrollView, StyleSheet, Text, View } from "react-native";
-import movieList from "../../services/movieList";
+import movieData from "../../services/movieData";
+import movieList  from "../../services/movieList";
+
 import { Card } from "../Card";
 
 

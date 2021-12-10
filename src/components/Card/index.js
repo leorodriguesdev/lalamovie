@@ -3,24 +3,28 @@ import { Image, StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import Icon from 'react-native-vector-icons/MaterialIcons';
 
 
+   
 
 export function Card({ navigationToMovie, movie}) {
  
- //   const { navigationToMovie } = props;   
+    //const { navigationToMovie } = props;   
     const { title, note, image } = movie; 
-   
+
  
  return (
         <View style={styles.container}>
             <Image
                 style={styles.image}
+                
                 source={image}
+                // source={ {uri: posterUrl} }
             />
             <TouchableOpacity style={styles.content}>
                 <View style={styles.vote}>
                     <Icon name="star" size={18} color="yellow" />
-
+                    
                     <Text style={styles.note}>{note}</Text>
+                    {/* <Text style={styles.note}>{year}</Text> */}
                 </View>
                 <Text style={styles.movieTitle}>{title}</Text>
                 <TouchableOpacity
