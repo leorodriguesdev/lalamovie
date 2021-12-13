@@ -10,7 +10,9 @@ import { getMovielist } from "../../services/movieService";
 
 export function TopRated(props) {
 
+
     const [movies, setMovies] = useState(undefined);
+
 
     const callback = (movieList) => {
         setMovies(movieList);
@@ -24,7 +26,7 @@ export function TopRated(props) {
     const { navigate } = props;
 
     const meuNavigationToMovie = () => {
-        navigate("Movie")
+        navigate("Movie", { movie: movies[0] });
     }
 
     const meuRenderItem = ({ item }) => (

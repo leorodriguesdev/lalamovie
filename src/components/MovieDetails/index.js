@@ -5,11 +5,7 @@ import { Comment } from "../comment";
 
 
 
-export function MovieDetails({movie}) {
-
- //   const { image, title, note, rank, synopsis, director, cast} = movie;
-
-
+export function MovieDetails( ) {
 
 
     return (
@@ -20,7 +16,7 @@ export function MovieDetails({movie}) {
                 style={styles.imageMovie}
             />
             <View style={styles.title}>
-                <Text style={styles.nameMovie}>As tranças de um careca</Text>
+                <Text style={styles.nameMovie}>kkkkkkk</Text>
                 <Icon name="star" size={22} color="yellow" />
                 <Text style={styles.note}>8.9</Text>
 

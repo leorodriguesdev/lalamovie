@@ -6,8 +6,7 @@ import Icon from 'react-native-vector-icons/MaterialIcons';
    
 
 export function Card({ navigationToMovie, movie}) {
- 
-    //const { navigationToMovie } = props;   
+   
     const { title, note, image } = movie; 
 
  
