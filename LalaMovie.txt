@@ -1,0 +1,10 @@
+	Implementar AsyncStorage
+	
+	
+	1.	Designer do menu no prototype no projeto ----------// ok
+	2.	Designer do Modal ou page de cadastro (a decidir)
+	3.	Criar a page Menu e estilizar 
+	4.	Criar a page Modal(page) de cadastro e estilizar 
+	5.	Definir a ação do icon hambúrguer para o menu usando DrawerNavigator do navigation
+	6.	Definir uma ação no botão registrar novo filme indo para o modal usando AnimatedSwitchNavigator do navigation
+	7.	Implementar no modal AsyncStorage para salvar, mostrar, editar e excluir um novo filmes

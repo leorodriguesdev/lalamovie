@@ -6,39 +6,38 @@ import { MovieDetails } from '../components/MovieDetails';
 import { Comment } from '../components/comment';
 
 
-export function Movie({route}) {
+export function Movie({ route }) {
 
-    const {    id,title, image, note, rank, synopsis, director, cast} = route.params.movie;
+    const { title, year, genres, director, actors, plot, posterUrl } = route.params.movie;
     return (
         <ScrollView>
-        <SafeAreaView style={styles.container}>
-        <Header />
-        <View style={styles.content} key={id}>
-            <Image
-                source={require('../assets/bannerMovie.jpg')}
-                style={styles.imageMovie}
-            />
-            <View style={styles.title}>
-                <Text style={styles.nameMovie}>{title}</Text>
-                <Icon name="star" size={22} color="yellow" />
-                <Text style={styles.note}>{note}</Text>
+            <Header />
 
-            </View>
-            <Text style={styles.subTitle}>{rank}</Text>
-            <Text style={styles.titleSinopse}>Sinopse</Text>
-            <Text style={styles.sinopse}>
-                {synopsis}
-            </Text>
+            <SafeAreaView style={styles.container}>
+                <View style={styles.content}>
 
-                <Text style={styles.cast}>{director}</Text>
-                <Text style={styles.cast}>{cast}</Text>
+                    <Image
+                        source={{ uri: posterUrl }}
+                        style={styles.imageMovie}
+                    />
+                    <View style={styles.title}>
+                        <Text style={styles.nameMovie}>{title}</Text>
+                        <Icon name="star" size={22} color="yellow" />
+                        <Text style={styles.note}>{year}</Text>
 
-        </View>
-        <Comment />
-        <Comment />
-        <Comment />
+                    </View>
+                    <Text style={styles.subTitle}>{genres.join(' - ')}</Text>
+                    <Text style={styles.sinopse}>{plot}</Text>
 
-    </SafeAreaView>
+                    <Text style={styles.cast}>Ditector: {director}</Text>
+                    <Text style={styles.cast}>Cast: {actors}</Text>
+
+                </View>
+                <Comment />
+                <Comment />
+                <Comment />
+
+            </SafeAreaView>
         </ScrollView>
     );
 };
@@ -51,7 +50,7 @@ const styles = StyleSheet.create({
         margin: 0,
         alignItems: 'center',
         backgroundColor: '#000',
-
+        paddingTop: 5
     },
     content: {
         width: '95%',
@@ -86,16 +85,9 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
     },
     subTitle: {
-        fontSize: 10,
+        fontSize: 14,
         color: '#fff',
         marginHorizontal: 15,
-    },
-    titleSinopse: {
-        fontSize: 18,
-        color: '#fff',
-        marginHorizontal: 15,
-        marginTop: 10,
-        textAlign: 'justify',
     },
     sinopse: {
         fontSize: 14,
@@ -104,7 +96,7 @@ const styles = StyleSheet.create({
         marginTop: 10,
         textAlign: 'justify',
 
-    }, 
+    },
     cast: {
         fontSize: 14,
         color: '#fff',

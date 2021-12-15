@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { FlatList, ScrollView, StyleSheet, Text, View } from "react-native";
-//import { movieData } from "../../services/movieData";
+import { movieData } from "../../services/movieData";
 import { Card } from "../Card";
-import movieList from "../../services/movieList";
+//import movieList from "../../services/movieList";
 import { getMovielist } from "../../services/movieService";
 
 
@@ -14,8 +14,8 @@ export function TopRated(props) {
     const [movies, setMovies] = useState(undefined);
 
 
-    const callback = (movieList) => {
-        setMovies(movieList);
+    const callback = (movieData) => {
+        setMovies(movieData);
     }
 
     useEffect(() => {
@@ -25,8 +25,8 @@ export function TopRated(props) {
 
     const { navigate } = props;
 
-    const meuNavigationToMovie = () => {
-        navigate("Movie", { movie: movies[0] });
+    const meuNavigationToMovie = (_movie) => {
+        navigate("Movie", { movie: _movie });
     }
 
     const meuRenderItem = ({ item }) => (

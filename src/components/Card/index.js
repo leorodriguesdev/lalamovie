@@ -7,29 +7,28 @@ import Icon from 'react-native-vector-icons/MaterialIcons';
 
 export function Card({ navigationToMovie, movie}) {
    
-    const { title, note, image } = movie; 
+    const { title, year, posterUrl, image } = movie; 
 
- 
  return (
         <View style={styles.container}>
             <Image
                 style={styles.image}
                 
-                source={image}
-                // source={ {uri: posterUrl} }
+                //source={image}
+                 source={ {uri: posterUrl } }
             />
             <TouchableOpacity style={styles.content}>
                 <View style={styles.vote}>
                     <Icon name="star" size={18} color="yellow" />
                     
-                    <Text style={styles.note}>{note}</Text>
-                    {/* <Text style={styles.note}>{year}</Text> */}
+                    {/* <Text style={styles.note}>{note}</Text> */}
+                    <Text style={styles.note}>{year}</Text>
                 </View>
                 <Text style={styles.movieTitle}>{title}</Text>
                 <TouchableOpacity
                     activeOpacity={.7}
                     style={styles.button}
-                    onPress={navigationToMovie}
+                    onPress={() => navigationToMovie(movie)}
                 ><Text style={styles.buttonText}>+ Ver mais</Text>
                 </TouchableOpacity>
 

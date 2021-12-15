@@ -12,22 +12,13 @@ export function Header(){
     return (
 
         <View  style={styles.container}>
-            
+            <Icon name="menu" size={35} color="white"/>
             <Image 
                 source={require('../../assets/logo.png')}
                 style={styles.logo}
                 resizeMode='contain'
             />
-            <TextInput 
-                 style={styles.input}   
-                 placeholder='Search'
-                 autoCapitalize='none'
-                 autoCorrect={false}
-                 value={text}
-                 onChangeText={(value) => setText(value)}    
-            />
-            <Icon name="search" size={30} color="white"/>
-            <Icon name="menu" size={50} color="white"/>
+            <Icon name="search" size={35} color="white"/>
             
         </View>
 
@@ -45,15 +36,5 @@ const styles = StyleSheet.create({
     logo: {
         width: 150,
         height: 90,
-    },
-    input: {
-        flex: 1,
-        backgroundColor: '#484646',
-        borderRadius: 15,
-        fontSize: 18,
-        paddingHorizontal: 10,
-        marginHorizontal: 10,  
     }
-
-
 });
