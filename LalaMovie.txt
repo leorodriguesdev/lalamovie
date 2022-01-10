@@ -11,7 +11,29 @@
 			- plot
 			- image 
 	3.	Criar a page page de cadastro RecordMovie.js ----------// ok
-	4.	Criar a page Menu
-	5.	Definir a ação do icon hambúrguer para o menu usando DrawerNavigator do navigation
-	6.	Definir uma ação no botão registrar novo filme indo para o modal usando AnimatedSwitchNavigator do navigation
-	7.	Implementar no modal AsyncStorage para salvar, mostrar, editar e excluir um novo filmes
+	4.	Implementar na page AsyncStorage para salvar, mostrar, editar e excluir um novo filmes
+
+		- Forma de adicionar sem alterar o existente
+		- Async storage merge
+
+		- SOLID
+			S — Single Responsiblity Principle (Princípio da responsabilidade única)
+			O — Open-Closed Principle (Princípio Aberto-Fechado)
+			L — Liskov Substitution Principle (Princípio da substituição de Liskov)
+			I — Interface Segregation Principle (Princípio da Segregação da Interface)
+			D — Dependency Inversion Principle (Princípio da inversão da dependência)
+
+			mostrar feedback do cadastro do filme ***
+				- sucesso 
+				- erro
+	5.	Definir a ação para o menu usando DrawerNavigator do navigation 
+	6.	Definir uma ação no botão registrar novo filme do menu indo para o modal usando AnimatedSwitchNavigator do navigation
+
+
+
+	promise
+
+	mvp
+
+
+

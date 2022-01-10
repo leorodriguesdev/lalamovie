@@ -1,11 +1,40 @@
 import React from 'react';
-import { SafeAreaView, ScrollView, StyleSheet, View, Text, TextInput } from 'react-native';
+import { SafeAreaView, ScrollView, StyleSheet, View, Text, TextInput, TouchableOpacity } from 'react-native';
 import { Header } from '../components/Header';
 import Icon from 'react-native-vector-icons/MaterialIcons';
-import { Button } from 'react-native-elements/dist/buttons/Button';
-
+import {storeData, getData} from '../store/storage';
+import saveMovieService from '../services/movieService';
 
 export function RecordMovie() {
+
+    const [title, setTitle] = React.useState(null);      
+    const [year, setYear] = React.useState(null);
+    const [genre, setGenre] = React.useState(null);
+    const [description, setDescription] = React.useState(null);
+    const [director, setDirector] = React.useState(null);
+    const [cast, setCast] = React.useState(null);
+    const [image, setImage] = React.useState(null);
+
+
+// metodo factory metodo responsavel por criar objetos 
+    function createNewMovie(){ 
+        const movie = {
+            title: title,
+            year: year, 
+            genre: genre,
+            description: description,
+            director: director,
+            cast: cast
+        }
+        return movie;
+    }
+
+    function saveMovie (){
+        const movie = createNewMovie() 
+        saveMovieService(movie);
+    }
+
+
 
 
     return (
@@ -25,22 +54,55 @@ export function RecordMovie() {
                     <Text style={styles.selectImg}>Select Image to Upload</Text>
                     </View>
 
-                    <TextInput style={styles.input} placeholder="Movie Title" />
-                    <View style={styles.inputRow}>
-                    <TextInput type='number 'style={styles.inputYear} placeholder="Year" />
-                    <TextInput style={styles.inputGender} placeholder="Gender" />
-                    </View>
-                    <TextInput style={styles.inputDescrip} placeholder="Description" />
-                    <TextInput style={styles.input} placeholder="Director" />
-                    <TextInput style={styles.input} placeholder="Cast" />
-                    <Button     
-                    title="Record Movie"
-                    buttonStyle={styles.button}
+                    <TextInput 
+                    style={styles.input} 
+                    placeholder="Movie Title" 
+                    placeholderTextColor="gray"
                     />
+                    <View style={styles.inputRow}>
+                    <TextInput 
+                    style={styles.inputYear} 
+                    placeholder="Year" 
+                    placeholderTextColor="gray"
+                    />
+                    <TextInput 
+                    style={styles.inputGender} 
+                    placeholder="Gender" 
+                    placeholderTextColor="gray"
+                    />
+                    </View>
+                    <TextInput 
+                    style={styles.inputDescrip} 
+                    placeholder="Description" 
+                    placeholderTextColor="gray"
+                    />
+                    <TextInput 
+                    style={styles.input} 
+                    placeholder="Director" 
+                    placeholderTextColor="gray"
+                    />
+                    <TextInput 
+                    style={styles.input} 
+                    placeholder="Cast" 
+                    placeholderTextColor="gray"
+                    />
+                    
+                    <TouchableOpacity   
+                    style={styles.button}
+                    onPress={saveMovie}
+                    underlayColor='#fff'>
+                    <Text style={styles.buttonText}>Record Movie</Text>
+                    </TouchableOpacity>    
+
                 </View>
             </SafeAreaView>
         </ScrollView>
     );
+
+// () executa a funcao
+// sem () referencia a funcao 
+
+
 };
 
 const styles = StyleSheet.create({
@@ -139,6 +201,15 @@ const styles = StyleSheet.create({
         backgroundColor: '#FDD030',
         color: '#fff',
         fontSize: 16,
-        textAlign: 'center',
+        alignItems: 'center',
+        },
+    buttonText: {
+        fontSize: 16,
+        color: '#fff',
+        fontWeight: 'bold',
+        textAlign:'center',
+        paddingVertical: 15,
+
     },
 });
+
